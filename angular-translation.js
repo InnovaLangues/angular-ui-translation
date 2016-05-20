@@ -51,9 +51,9 @@ angular.module('ui.translation', [])
             }
 
             if (typeof domain === 'string' && domain.length !== 0) {
-                translated = Translator.transChoice(text, placeholder, count, domain);
+                translated = Translator.transChoice(text, count, placeholder, domain);
             } else {
-                translated = Translator.transChoice(text, placeholder, count);
+                translated = Translator.transChoice(text, count, placeholder);
             }
 
             return translated;
